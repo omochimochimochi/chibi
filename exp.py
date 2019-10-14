@@ -19,7 +19,9 @@ def toExpr(a):
         a = Val(a)
         return a
 
-def__repr__(self):classname = self.__class__.__name__returnf’{classname}({self.left},{self.right})’
+def __repr__(self):
+classname = self.__class__.__name__
+return f’{classname}({self.left},{self.right})’
 
 class Add(Expr):
     __slots__=['left','right']

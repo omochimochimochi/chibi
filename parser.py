@@ -1,8 +1,2 @@
-return Val(num)
-
-e = parse("123")
-print(e)   
-
-s = "123+456"
-pos = s.find('+')
-print('pos',pos)
+e = parse("1")
+assert e.eval() == 1

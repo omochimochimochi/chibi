@@ -7,3 +7,6 @@ assert e.eval() == 3
 parse("1")
 parse("1+2")
 parse("1+2+3")
+
+parse("1*2+3")
+parse("1+2*3")

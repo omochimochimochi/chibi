@@ -1,12 +1,15 @@
-e = parse("1")
-assert e.eval() == 1
+from exp import Val, Add, Sub, Mul, Div
+def parse(s: str):
+    num = int(s)
+    return val(num)
 
-e = parse("1+2")
-assert e.eval() == 3
+e = parse("123")
+print(e)
 
-parse("1")
-parse("1+2")
-parse("1+2+3")
+s = "123456"
+pos = s.find("+")　# + 記号を探す
+print('pos', pos)
 
-parse("1*2+3")
-parse("1+2*3")
+s1 = s[0:pos]
+s2 = s[pos+1:]
+print(s, s1, s2)   # + 記号で分割

@@ -14,6 +14,9 @@ v = Val(1)
 print(v)
 assert v.eval() == 1
 
+e = Add(Val(1), Val(2)))
+assert e.evil() == 3
+
 def toExpr(a):
     if not isinstance(a, Expr):
         a = Val(a)
